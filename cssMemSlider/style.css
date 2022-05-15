@@ -1,0 +1,386 @@
+
+body {
+  background-color: #24292d;
+}
+
+.slider {
+  position: relative;
+  width: 75%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+  box-shadow: 0 0.8rem 1.6rem -0.4rem rgba(0, 0, 0, 0.75);
+
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  margin: 0 auto;
+  position: relative;
+  text-align: right;
+  width: 98%;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+div.switch div{
+  margin-top: 1.5%;
+  margin-left: -20px;
+}
+
+.switch label {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 -0.1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #2b90e7;
+  background-color: #2b90e7;
+}
+
+#btn1:checked ~ .switch label[for="btn1"] {
+  border: 0.2rem solid #2b90e7;
+  background-color: #24292d;
+}
+#btn1:checked ~ .switch label.btn1,
+#btn2:checked ~ .switch label.btn2,
+#btn3:checked ~ .switch label.btn3,
+#btn4:checked ~ .switch label.btn4 {
+  transform: translate(0, -0.29rem) scale(0.8);
+}
+
+#btn1:checked ~ p.p1 {
+  position: fixed;
+  display: contents;
+  color: #2b90e7;
+  font-size: 1.1rem;
+  border: none;
+  
+
+}
+#btn1:checked ~ p.p1:hover {
+  border: none;
+}
+label.p1 {
+  width: 100%;
+}
+
+label.p2 {
+  width: 100%;
+}
+label.p3 {
+  width: 100%;
+}
+label.p4 {
+  width: 100%;
+  border: #24292d;
+}
+
+#btn1:checked ~ .switch label[for="btn1"]:hover {
+  border: 0.2rem solid white;
+  background-color: #24292d;
+  caret-color: rgba(255, 255, 255, 0);
+}
+
+#btn1 ~ .switch label[for="btn1"] {
+  border: 0.5rem solid #24292d;
+  width: 1.2rem;
+  height: 1.2rem;
+  caret-color: rgba(255, 255, 255, 0);
+}
+#btn2 ~ .switch label[for="btn2"] {
+  border: 0.5rem solid #24292d;
+  width: 1.2rem;
+  height: 1.2rem;
+  caret-color: rgba(255, 255, 255, 0);
+}
+#btn3 ~ .switch label[for="btn3"] {
+  border: 0.5rem solid #24292d;
+  width: 1.2rem;
+  height: 1.2rem;
+  caret-color: rgba(255, 255, 255, 0);
+}
+#btn4 ~ .switch label[for="btn4"] {
+  border: 0.4rem solid #24292d;
+  width: 1.2rem;
+  height: 1.2rem;
+  caret-color: rgba(255, 255, 255, 0);
+}
+label.p1,
+label.p2,
+label.p3,
+label.p4 {
+  display: none;
+  border: none;
+  height: 3.2rem;
+}
+
+label.p1 span,
+label.p2 span,
+label.p3 span,
+label.p4 span {
+  border: none;
+  margin-top: 1rem;
+  position: fixed;
+  height: 3.2rem;
+  animation: spann 1.3s ease-out;
+}
+#btn1:checked ~ .switch label.p1 {
+  display: inline;
+  position: fixed;
+  border: none;
+  font-size: 3vw;
+  color: white;
+  line-height: 0;
+  margin: 0 auto;
+}
+#btn1:checked ~ .switch label.p1:hover {
+  border: none;
+}
+
+.btn1:hover {
+  border: 0.2rem solid white;
+
+  background-color: white;
+}
+
+#btn2:checked ~ .switch label[for="btn2"] {
+  border: 0.2rem solid #2b90e7;
+  background-color: #24292d;
+  caret-color: transparent;
+}
+
+#btn2:checked ~ .switch label[for="btn2"]:hover {
+  border: 0.2rem solid white;
+  background-color: #24292d;
+}
+#btn2:checked ~ .switch label.p2:hover {
+  border: none;
+}
+
+#btn2:checked ~ .switch label.p2 {
+  display: inline;
+  position: fixed;
+  border: none;
+  font-size: 3vw;
+  color: white;
+  line-height: 0;
+  margin: 0 auto;
+}
+
+.btn2:hover {
+  border: 0.2rem solid white;
+  background-color: white;
+}
+
+#btn3:checked ~ .switch label[for="btn3"] {
+  border: 0.2rem solid #2b90e7;
+  background-color: #24292d;
+  caret-color: transparent;
+}
+#btn3:checked ~ .switch label[for="btn3"]:hover {
+  border: 0.2rem solid white;
+  background-color: #24292d;
+}
+#btn3:checked ~ .switch label.p3 {
+  display: inline;
+  position: fixed;
+  border: none;
+  font-size: 3vw;
+  color: white;
+  line-height: 0;
+  margin: 0 auto;
+}
+#btn3:checked ~ .switch label.p3:hover {
+  border: none;
+}
+
+.btn3:hover {
+  border: 0.2rem solid white;
+  background-color: white;
+}
+
+#btn4:checked ~ .switch label[for="btn4"] {
+  border: 0.2rem solid #2b90e7;
+  background-color: #24292d;
+  caret-color: transparent;
+}
+#btn4:checked ~ .switch label[for="btn4"]:hover {
+  border: 0.2rem solid white;
+  background-color: #24292d;
+}
+#btn4:checked ~ .switch label.p4 {
+  display: inline;
+  position: fixed;
+  border: none;
+  font-size: 3vw;
+  color: white;
+  line-height: 0;
+  margin: 0 auto;
+}
+#btn4:checked ~ .switch label.p4:hover {
+  border: none;
+}
+
+.btn4:hover {
+  border: 0.2rem solid white;
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.slides {
+  width: 400%;
+  transition: all 1.5s;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.slides img {
+  width: 25%;
+  height: 100%;
+
+}
+#img1,
+#img2,
+#img3,
+#img4 {
+  animation: slidess 1.5s forwards;
+}
+label.btn1 {
+  box-shadow: 150%;
+}
+
+#btn1:checked ~ slider-inner .slides {
+  transform: translate(0);
+}
+
+#btn2:checked ~ .slider-inner .slides {
+  transform: translate(-25%);
+}
+
+#btn3:checked ~ .slider-inner .slides {
+  transform: translate(-50%);
+}
+
+#btn4:checked ~ .slider-inner .slides {
+  transform: translate(-75%);
+}
+.lab-btn {
+  background-color: #24292d;
+  height: 2.7rem;
+}
+
+p {
+  color: aliceblue;
+  width: 10rem;
+  height: 1rem;
+}
+.exp {
+  color: aliceblue;
+  margin-left: -50%;
+}
+
+@media screen and (min-width: 1670px) {
+  label.p1 span,
+  label.p2 span,
+  label.p3 span,
+  label.p4 span {
+    border: none;
+    margin-top: 1rem;
+    position: fixed;
+    height: 3.1rem;
+  }
+}
+
+/* @media screen and (max-width: 760px) {
+  .switch {
+    margin: 0 auto;
+    position: relative;
+
+    
+    text-align: center;
+    width: 98%;
+    height: 6.55rem;
+    
+  }
+  label.p1 span,
+  label.p2 span,
+  label.p3 span,
+  label.p4 span {
+    border: none;
+    margin-top: 3.43rem;
+    position: fixed;
+    height: 3.12rem;
+   
+  }
+} */
+@media screen and (max-width: 600px) {
+  .switch {
+    margin: 0 auto;
+    position: relative;
+
+
+    text-align: center;
+    width: 98%;
+    height: 6.56rem;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 5rem;
+
+  }
+  .switch div{
+    margin-bottom: 0;
+    height: 3.5rem;
+  }
+  #title-img{
+    margin-left: 0;
+    width: 100%;
+    text-align: start;
+    margin-top: -0px;
+   
+  }
+
+  label.p1 span,
+  label.p2 span,
+  label.p3 span,
+  label.p4 span {
+    font-size: 0.9rem;
+  }
+}
+
+
+@keyframes spann {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidess {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
