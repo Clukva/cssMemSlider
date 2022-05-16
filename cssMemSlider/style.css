@@ -4,7 +4,6 @@ body {
 }
 
 .slider {
-  position: relative;
   width: 75%;
   max-width: 80%;
   margin: 0 auto;
@@ -19,7 +18,6 @@ body {
 
 .switch {
   margin: 0 auto;
-  position: relative;
   text-align: right;
   width: 98%;
   height: 5em;
@@ -29,25 +27,21 @@ body {
 
 }
 div.switch div{
-  margin-top: 1.5%;
-/*   margin-left: -5px; */
-  
+  margin-top: 1.5%;  
 }
 
 .switch label {
   display: inline-block;
   cursor: pointer;
-  margin: 0 -0.1rem;
+ /*  margin: 0 -0.1rem; */
   border-radius: 50%;
   border: 0.2rem solid #2b90e7;
   background-color: #2b90e7;
 }
 
 #btn1:checked ~ .switch label[for="btn1"] {
-  
   border: 0.2rem solid #2b90e7;
   background-color: #24292d;
-  
 }
 #btn1:checked ~ .switch label.btn1,
 #btn2:checked ~ .switch label.btn2,
@@ -55,11 +49,11 @@ div.switch div{
 #btn4:checked ~ .switch label.btn4 {
   transform: translate(0, -0.29rem) scale(0.8);
   display: inline-block;
+ 
 
 }
 
 #btn1:checked ~ p.p1 {
-  position: fixed;
   display: contents;
   color: #2b90e7;
   font-size: 1.1rem;
@@ -124,21 +118,22 @@ label.p4 {
   border: none;
   height: 3.2rem;
 }
+#button-img{
+  margin-top: 0.1rem;
+}
 
 label.p1 span,
 label.p2 span,
 label.p3 span,
 label.p4 span {
   border: none;
-  margin-top: 1rem;
-  position: fixed;
+  margin-top: 1.5rem;
   height: 3.2rem;
   animation: spann 1.3s ease-out;
 }
 #btn1:checked ~ .switch label.p1 {
 
   display: inline;
-  /* position: fixed; */
   border: none;
   font-size: 3vw;
   color: white;
@@ -173,7 +168,6 @@ label.p4 span {
 
 #btn2:checked ~ .switch label.p2 {
   display: inline;
-  position: fixed;
   border: none;
   font-size: 3vw;
   color: white;
@@ -197,7 +191,6 @@ label.p4 span {
 }
 #btn3:checked ~ .switch label.p3 {
   display: inline;
-  position: fixed;
   border: none;
   font-size: 3vw;
   color: white;
@@ -224,7 +217,6 @@ label.p4 span {
 }
 #btn4:checked ~ .switch label.p4 {
   display: inline;
-  position: fixed;
   border: none;
   font-size: 3vw;
   color: white;
@@ -242,7 +234,6 @@ label.p4 span {
 
 .slider-inner {
   overflow: hidden;
-  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -308,7 +299,6 @@ p {
   label.p4 span {
     border: none;
     margin-top: 1rem;
-    /* position: fixed; */
     height: 3.1rem;
     
   }
@@ -318,16 +308,12 @@ p {
 @media screen and (max-width: 600px) {
   .switch {
     margin: 0 auto;
-    position: relative;
-
-
     text-align: center;
     width: 98%;
     height: 6.56rem;
     display: flex;
     flex-direction: column-reverse;
     height: 5rem;
-
   }
   .switch div{
     margin-bottom: 0;
@@ -339,13 +325,6 @@ p {
     text-align: start;
     margin-top: -0px;
     }
-
-/*   label.p1 span,
-  label.p2 span,
-  label.p3 span,
-  label.p4 span {
-    font-size: 0.9rem;
-  } */
 }
 
 
