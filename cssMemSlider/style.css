@@ -49,17 +49,13 @@ div.switch div{
 #btn4:checked ~ .switch label.btn4 {
   transform: translate(0, -0.29rem) scale(0.8);
   display: inline-block;
- 
-
-}
+ }
 
 #btn1:checked ~ p.p1 {
   display: contents;
   color: #2b90e7;
   font-size: 1.1rem;
   border: none;
-  
-
 }
 #btn1:checked ~ p.p1:hover {
   border: none;
