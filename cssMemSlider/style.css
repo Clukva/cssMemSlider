@@ -30,7 +30,8 @@ body {
 }
 div.switch div{
   margin-top: 1.5%;
-  margin-left: -20px;
+/*   margin-left: -5px; */
+  
 }
 
 .switch label {
@@ -43,14 +44,18 @@ div.switch div{
 }
 
 #btn1:checked ~ .switch label[for="btn1"] {
+  
   border: 0.2rem solid #2b90e7;
   background-color: #24292d;
+  
 }
 #btn1:checked ~ .switch label.btn1,
 #btn2:checked ~ .switch label.btn2,
 #btn3:checked ~ .switch label.btn3,
 #btn4:checked ~ .switch label.btn4 {
   transform: translate(0, -0.29rem) scale(0.8);
+  display: inline-block;
+
 }
 
 #btn1:checked ~ p.p1 {
@@ -67,6 +72,7 @@ div.switch div{
 }
 label.p1 {
   width: 100%;
+ 
 }
 
 label.p2 {
@@ -105,7 +111,7 @@ label.p4 {
   caret-color: rgba(255, 255, 255, 0);
 }
 #btn4 ~ .switch label[for="btn4"] {
-  border: 0.4rem solid #24292d;
+  border: 0.5rem solid #24292d;
   width: 1.2rem;
   height: 1.2rem;
   caret-color: rgba(255, 255, 255, 0);
@@ -130,16 +136,19 @@ label.p4 span {
   animation: spann 1.3s ease-out;
 }
 #btn1:checked ~ .switch label.p1 {
+
   display: inline;
-  position: fixed;
+  /* position: fixed; */
   border: none;
   font-size: 3vw;
   color: white;
   line-height: 0;
   margin: 0 auto;
+ 
 }
 #btn1:checked ~ .switch label.p1:hover {
   border: none;
+ 
 }
 
 .btn1:hover {
@@ -299,33 +308,13 @@ p {
   label.p4 span {
     border: none;
     margin-top: 1rem;
-    position: fixed;
+    /* position: fixed; */
     height: 3.1rem;
+    
   }
 }
 
-/* @media screen and (max-width: 760px) {
-  .switch {
-    margin: 0 auto;
-    position: relative;
 
-    
-    text-align: center;
-    width: 98%;
-    height: 6.55rem;
-    
-  }
-  label.p1 span,
-  label.p2 span,
-  label.p3 span,
-  label.p4 span {
-    border: none;
-    margin-top: 3.43rem;
-    position: fixed;
-    height: 3.12rem;
-   
-  }
-} */
 @media screen and (max-width: 600px) {
   .switch {
     margin: 0 auto;
@@ -349,15 +338,14 @@ p {
     width: 100%;
     text-align: start;
     margin-top: -0px;
-   
-  }
+    }
 
-  label.p1 span,
+/*   label.p1 span,
   label.p2 span,
   label.p3 span,
   label.p4 span {
     font-size: 0.9rem;
-  }
+  } */
 }
 
 
