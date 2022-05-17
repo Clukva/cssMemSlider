@@ -4,7 +4,7 @@ body {
 }
 
 .slider {
-  width: 75%;
+  width: 73%;
   max-width: 80%;
   margin: 0 auto;
   margin-top: 1%;
@@ -125,7 +125,7 @@ label.p4 span {
   border: none;
   margin-top: 1.5rem;
   height: 3.2rem;
-  animation: spann 1.3s ease-out;
+  animation: spann 1.7s ease-in;
 }
 #btn1:checked ~ .switch label.p1 {
 
@@ -147,6 +147,8 @@ label.p4 span {
 
   background-color: white;
 }
+
+
 
 #btn2:checked ~ .switch label[for="btn2"] {
   border: 0.2rem solid #2b90e7;
@@ -327,11 +329,13 @@ p {
 @keyframes spann {
   0% {
     transform: translateX(50%);
+   transform: scale(0.5);
     opacity: 0;
   }
 
   100% {
     transform: translateX(0);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -340,6 +344,7 @@ p {
   0% {
     transform: translateX(50%);
     opacity: 0;
+    
   }
 
   100% {
@@ -347,3 +352,22 @@ p {
     opacity: 1;
   }
 }
+.btn1:active {
+  transform: scale(1.1);
+    background-color: rgba(186, 186, 186, 0.998);
+  }
+  
+  .btn2:active {
+    transform: scale(1.1);
+      background-color: rgba(186, 186, 186, 0.998);
+    }
+  
+  .btn3:active {
+      transform: scale(1.1);
+        background-color: rgba(186, 186, 186, 0.998);
+  }
+  
+  .btn4:active {
+        transform: scale(1.1);
+          background-color: rgba(186, 186, 186, 0.998);
+  }
