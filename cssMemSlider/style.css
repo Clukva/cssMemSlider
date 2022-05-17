@@ -4,7 +4,7 @@ body {
 }
 
 .slider {
-  width: 73%;
+  width: 70%;
   max-width: 80%;
   margin: 0 auto;
   margin-top: 1%;
@@ -321,7 +321,7 @@ p {
     margin-left: 0;
     width: 100%;
     text-align: start;
-    margin-top: -0px;
+    margin-top: 0;
     }
 }
 
